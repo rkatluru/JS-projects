@@ -27,6 +27,8 @@ body {
   left: 10px;
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  cursor: pointer;
 }
 
 .logo img {
@@ -34,6 +36,13 @@ body {
   height: 80px;
 }
 
+.logo:active {
+  transform: scale(0.98);
+}
+
+.logo:focus {
+  outline: 0;
+}
 .tag {
   background-color: #b3a4db;
   color: #fff;
